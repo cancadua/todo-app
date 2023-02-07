@@ -27,7 +27,6 @@ const AddTodo = ({ setModalIsOpen }) => {
 	}
 
 	const handleThemeChange = (e) => {
-		console.log(e)
 	    setTodo(
 	      {
 	        ...todo,
