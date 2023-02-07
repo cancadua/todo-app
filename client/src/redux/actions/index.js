@@ -6,6 +6,7 @@ export const addTodo = todo => ({
       id: Date.now(),
       title: todo?.title,
       description: todo?.description,
+      theme: todo?.theme
     },
 });
 
@@ -17,6 +18,17 @@ export const setVisibilityFilter = filter => ({
 export const toggleTodo = id => ({
     type: actionTypes.TOGGLE_TODO,
     id
+});
+
+export const setTheme = (id, theme) => ({
+    type: actionTypes.SET_THEME,
+    id: id,
+    theme: theme
+});
+
+export const deleteTodo = (id) => ({
+    type: actionTypes.DELETE_TODO,
+    id: id
 });
 
 export const VisibilityFilters = {

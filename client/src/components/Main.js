@@ -1,11 +1,9 @@
-import TaskList from './TaskList'
-import AddTask from "./AddTask"
-
+import TodoList from './TodoList'
 
 const Main = () => {
 	return (
 		<div className="self-center container flex w-full justify-center h-full">
-			<TaskList/>
+			<TodoList/>
 		</div>
 	)
 }

@@ -1,5 +1,5 @@
 import Modal from 'react-modal'
-import AddTask from "./AddTask"
+import AddTodo from "./AddTodo"
 import { useState } from 'react';
 
 
@@ -10,12 +10,13 @@ const Navigation = () => {
 	return (
 		<nav className="flex h-16 fixed w-full z-20 top-0 left-0 bg-gradient-to-b to-purple-600 from-purple-400">
 			<Modal 
-		        className='absolute inset-40 bg-white rounded-xl'
-		        overlayClassName='absolute inset-0 bg-black/60 z-30'
+				ariaHideApp={false}
+		        className='fixed inset-40 bg-white rounded-xl'
+		        overlayClassName='fixed inset-0 bg-black/60 z-30'
 		        isOpen={modalIsOpen}
 		        onRequestClose={() => setModalIsOpen(false)}
 		    >
-		    	<AddTask setModalIsOpen={() => setModalIsOpen(false)}/>
+		    	<AddTodo setModalIsOpen={() => setModalIsOpen(false)}/>
 		    </Modal>
 		  	<div className="container flex flex-wrap items-center justify-between mx-auto p-2">
 			  	<button className="px-2 flex items-center h-full font-black text-white text-xl cursor-pointer rounded-xl">
