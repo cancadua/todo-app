@@ -16,6 +16,8 @@ A todo app project. Actor will be able to
 - set Todo-task complete,
 - remove Todo-task, 
 - set Todo-task theme,
+- hold Todo-tasks in local storage
+
 
 ## Tech stack:
 ### Frontend
